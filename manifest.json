@@ -5,7 +5,7 @@
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "content_security_policy": "script-src 'unsafe-eval' 'self' https://gistlangserver.in; object-src 'self'",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["style/js/background.js"],
     "persistent": false
   },
   "page_action": {

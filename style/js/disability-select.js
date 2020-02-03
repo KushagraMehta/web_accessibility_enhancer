@@ -7,9 +7,15 @@ chrome.storage.sync.set({ Language: parameters[1] }, function() {
 // Code For Done Button
 document.addEventListener("DOMContentLoaded", function() {
   var button = document.getElementById("final");
+  console.log(button);
   // onClick's logic below:
   button.addEventListener("click", function() {
     //-------Add More Code----------//
-    window.close();
+    var selValue = $("input[name='radioname']:checked").val();
+    console.log(selValue);
+    chrome.storage.sync.set({ disability: selValue }, function() {
+      console.log("Disability is set to " + selValue);
+    });
+    // window.close();
   });
 });
