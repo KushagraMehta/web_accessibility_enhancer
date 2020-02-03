@@ -1,9 +1,15 @@
 var parameters = location.search.substring(1).split("=");
-var lang = parameters[0];
-var final_lang = parameters[1];
-chrome.storage.sync.set({ lang: final_lang }, function() {
-  console.log("Language is set to " + final_lang);
+// Storing Selected language in Chrome Storage
+chrome.storage.sync.set({ Language: parameters[1] }, function() {
+  console.log("Language is set to " + parameters[1]);
 });
-chrome.storage.sync.get([lang], function(result) {
-  console.log("Value currently is " + result.key);
+
+// Code For Done Button
+document.addEventListener("DOMContentLoaded", function() {
+  var button = document.getElementById("final");
+  // onClick's logic below:
+  button.addEventListener("click", function() {
+    //-------Add More Code----------//
+    window.close();
+  });
 });
