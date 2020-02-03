@@ -1,1 +1,1 @@
-# web_accessibility_enhancer
+# Web Accessibility Enhancer
