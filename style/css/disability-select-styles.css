@@ -1,3 +1,16 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.disab-rb-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
 .disab-rb {
     display : block;
     width: 400px;
@@ -6,6 +19,7 @@
 .disab-rb-style {
     margin-bottom: 8px;
     padding: 20px;
+    font-size: large;
     text-align: center;
 }
 
